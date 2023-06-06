@@ -70,6 +70,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/ramils-site/sections/AboutMe.tsx",
               "deco-sites/ramils-site/sections/DesignSystem.tsx",
               "deco-sites/ramils-site/sections/GetStarted.tsx",
               "deco-sites/ramils-site/sections/Head.tsx",
@@ -6893,6 +6894,36 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9BYm91dE1lLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "yourPhoto": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Your Photo"
+        },
+        "yourName": {
+          "type": "string",
+          "title": "Your Name"
+        },
+        "yourDescription": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Your Description"
+        }
+      },
+      "required": [
+        "yourPhoto",
+        "yourName"
+      ],
+      "title": "deco-sites/ramils-site/sections/AboutMe.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors": {
       "type": "object",
       "properties": {
@@ -7224,6 +7255,13 @@
             "null"
           ],
           "title": "Enable Inspect V S Code"
+        },
+        "userName": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "User Name"
         }
       },
       "required": [],
@@ -9446,6 +9484,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9BYm91dE1lLnRzeA==": {
+      "title": "deco-sites/ramils-site/sections/AboutMe.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9BYm91dE1lLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/ramils-site/sections/AboutMe.tsx"
+          ],
+          "default": "deco-sites/ramils-site/sections/AboutMe.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4": {
       "title": "deco-sites/ramils-site/sections/DesignSystem.tsx",
       "type": "object",
@@ -10598,6 +10657,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9BYm91dE1lLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4"
