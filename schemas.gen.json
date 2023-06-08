@@ -71,6 +71,7 @@
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
               "deco-sites/ramils-site/sections/AboutMe.tsx",
+              "deco-sites/ramils-site/sections/CaseCard.tsx",
               "deco-sites/ramils-site/sections/DesignSystem.tsx",
               "deco-sites/ramils-site/sections/GetStarted.tsx",
               "deco-sites/ramils-site/sections/Head.tsx",
@@ -6924,6 +6925,62 @@
       ],
       "title": "deco-sites/ramils-site/sections/AboutMe.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "companyImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Company Image"
+        },
+        "companyName": {
+          "type": "string",
+          "title": "Company Name"
+        },
+        "firstNumberImprovement": {
+          "type": "string",
+          "title": "First Number Improvement"
+        },
+        "firstImprovement": {
+          "type": "string",
+          "title": "First Improvement"
+        },
+        "secondImprovement": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Second Improvement"
+        },
+        "secondNumberImprovement": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Second Number Improvement"
+        },
+        "thirdImprovement": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Third Improvement"
+        },
+        "thirdNumberImprovement": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Third Number Improvement"
+        }
+      },
+      "required": [
+        "companyImage",
+        "companyName",
+        "firstNumberImprovement",
+        "firstImprovement"
+      ],
+      "title": "deco-sites/ramils-site/sections/CaseCard.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors": {
       "type": "object",
       "properties": {
@@ -9505,6 +9562,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=": {
+      "title": "deco-sites/ramils-site/sections/CaseCard.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/ramils-site/sections/CaseCard.tsx"
+          ],
+          "default": "deco-sites/ramils-site/sections/CaseCard.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4": {
       "title": "deco-sites/ramils-site/sections/DesignSystem.tsx",
       "type": "object",
@@ -10660,6 +10738,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9BYm91dE1lLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4"
