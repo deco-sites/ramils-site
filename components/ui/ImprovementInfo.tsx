@@ -1,17 +1,17 @@
 export interface Props {
-  firstNumberImprovement: string;
-  firstImprovement: string;
+  numberImprovement: string;
+  improvement: string;
   secondColor: boolean;
 }
 
 export default function ImprovementInfo(
-  { firstImprovement, firstNumberImprovement, secondColor }: Props,
+  { improvement, numberImprovement, secondColor }: Props,
 ) {
   return (
     <div class="flex max-w-[175px] flex-col justify-center">
       <div class="relative mb-5 w-[95px] ml-auto mr-auto">
         <div class="bg-[#02F67C] h-[95px] w-[95px] rounded-[50%] font-bold text-[24px] text-[#fff] flex justify-center items-center">
-          {firstNumberImprovement}
+          {numberImprovement}
         </div>
         <div
           class={`bg-none border-[1px] h-[95px] w-[95px] rounded-[50%] left-[-6px] bottom-[-8px] border-solid ${
@@ -25,7 +25,7 @@ export default function ImprovementInfo(
           secondColor ? "text-[#fff]" : "text-[#0A2121]"
         }`}
       >
-        {firstImprovement}
+        {improvement}
       </h2>
     </div>
   );

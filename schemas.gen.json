@@ -6925,7 +6925,7 @@
       ],
       "title": "deco-sites/ramils-site/sections/AboutMe.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@Props": {
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@EachCase": {
       "type": "object",
       "properties": {
         "companyImage": {
@@ -6936,6 +6936,10 @@
           "type": "string",
           "title": "Company Name"
         },
+        "secondaryColor": {
+          "type": "boolean",
+          "title": "Secondary Color"
+        },
         "firstNumberImprovement": {
           "type": "string",
           "title": "First Number Improvement"
@@ -6944,13 +6948,6 @@
           "type": "string",
           "title": "First Improvement"
         },
-        "secondImprovement": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Second Improvement"
-        },
         "secondNumberImprovement": {
           "type": [
             "string",
@@ -6958,12 +6955,12 @@
           ],
           "title": "Second Number Improvement"
         },
-        "thirdImprovement": {
+        "secondImprovement": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Third Improvement"
+          "title": "Second Improvement"
         },
         "thirdNumberImprovement": {
           "type": [
@@ -6971,13 +6968,41 @@
             "null"
           ],
           "title": "Third Number Improvement"
+        },
+        "thirdImprovement": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Third Improvement"
         }
       },
       "required": [
         "companyImage",
         "companyName",
+        "secondaryColor",
         "firstNumberImprovement",
         "firstImprovement"
+      ],
+      "title": "EachCase"
+    },
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@EachCase[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@EachCase"
+      },
+      "title": "EachCase[]"
+    },
+    "ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "cases": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9yYW1pbHMtc2l0ZS9zZWN0aW9ucy9DYXNlQ2FyZC50c3g=@EachCase[]",
+          "title": "Cases"
+        }
+      },
+      "required": [
+        "cases"
       ],
       "title": "deco-sites/ramils-site/sections/CaseCard.tsx@Props"
     },
